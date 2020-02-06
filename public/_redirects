@@ -1,0 +1,15 @@
+# *** Warning! Your custom domain is not using HTTPS yet ***
+# These rules will change if you change your site’s custom domains or HTTPS settings
+
+# Redirect domain aliases to primary domain
+http://magicpath.company/* http://magicpath.co/:splat 301!
+http://www.magicpath.company/* http://magicpath.co/:splat 301!
+http://magicpath.net/* http://magicpath.co/:splat 301!
+http://www.magicpath.net/* http://magicpath.co/:splat 301!
+http://magicpath.org/* http://magicpath.co/:splat 301!
+http://www.magicpath.org/* http://magicpath.co/:splat 301!
+http://magicpath.fund/* http://magicpath.co/:splat 301!
+http://www.magicpath.fund/* http://magicpath.co/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+http://xenodochial-newton-dad783.netlify.com/* http://magicpath.co/:splat 301!
