@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 
-		<title>MagicPath | Become A Partner</title>
+		<title>MagicPath | Partner With Us</title>
 
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/bxslider.css" rel="stylesheet">
@@ -14,7 +14,6 @@
 		<link href="css/mobile.css" rel="stylesheet" media="(max-width:1170px)">
 	</head>
 	<body>
-
 		<a class="mobile_menu" data-open="nav12" id="mobile_menu"></a>
 
 		<nav class="nav12" id="nav">
@@ -25,12 +24,12 @@
 				<div class="left">
 					<a href="who_we_are.html">Who We Are</a>
 					<a href="what_we_do.html">What We Do</a>
-					<!--<a href="case_studies.html">Case Studies</a>-->
+					<!--<a href="">Case Studies</a>-->
 				</div>
 
 				<div class="right">
 					<a href="partner.html" class="header12_btn">Become A Partner</a>
-					<a href="contact.html" class="header12_btn white">Get In Touch</a>
+					<a  class="header12_btn white"><strike>Get In Touch</strike></a>
 				</div>
 
 				<!--//<div class="mobile_socials">
@@ -44,6 +43,12 @@
 		</nav>
 
 		<header class="header5 header20" id="header20">
+			<div class="video">
+				<video>
+					<source src="video/video1.mp4" type="video/mp4">
+				</video>
+				<a href="#" class="header5_pause"></a>
+			</div>
 			<div class="container">
 				<h1>Let's talk...</h1>
 			</div>
@@ -52,13 +57,34 @@
 
 		<section class="sec7_20">
 			<div class="container">
-				<h2>Want To <i>Partner</i>?</h2>
-				<div class="sec1_13_text">Feel free to reach out to us on the phone at 844-420-PATH, or fill out the form below.</div>
+				<h2>Drop Us <i>a</i> Line</h2>
+				<div class="sec1_13_text">You can also call us at 844-420-PATH.</div>
+
+
+				<form
+		    name="partner" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
+		      <input type="hidden" name="form-name" value="website" />
+		      <ul>
+		        <li v-for="(soundBite, index) in soundClips" :key="index">
+		          <label>
+		            <input
+		              type="radio"
+		              name="clip"
+		              :value="soundBite"
+		              :checked="soundBite === form.chosenClip"
+		              @input="ev => form.chosenClip = ev.target.value"
+		            >
+		            <span>{{ soundBite }}</span>
+		          </label>
+		        </li>
+		      </ul>
+		      <button type="submit">Just tell me already</button>
+		    </form>
 
 				<form action="" method="POST" class="sec6_5_form">
 
 					<div class="sec6_5_label">Your Message</div>
-					<textarea name="message" placeholder="Tell us about what kind of partnership you're looking for"></textarea>
+					<textarea name="message" placeholder="Tell us about your project, or just drop a note"></textarea>
 
 					<div class="sec6_5_label">Your name</div>
 					<input type="text" name="name" placeholder="" />
@@ -66,8 +92,8 @@
 					<br/><div class="sec6_5_label">Your e-mail</div>
 					<input type="text" name="email" placeholder="name@mail.com" />
 					<br/><br/>
-					<div class="sec6_5_label">Your mobile</div>
-					<input type="text" name="mobile" placeholder="name@mail.com" />
+					<div class="sec6_5_label">Your work number</div>
+					<input type="text" name="mobile" placeholder="" />
 
 					<button>Send a Message</button>
 					<div class="clr"></div>
@@ -75,29 +101,43 @@
 			</div>
 		</section>
 
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/bxslider.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+		<section class="sec7_20">
+			<div class="container">
+				<h2>Drop Us <i>a</i> Line</h2>
+				<div class="sec1_13_text">We Are Always Looking for the Next Great Project</div>
 
+				<form name="contact" method="POST" data-netlify="true">
+
+					<div class="sec6_5_label">Your Message</div>
+					<textarea name="name" placeholder="Your Name"></textarea>
+					<textarea name="email" placeholder="Your Email"></textarea>
+					<textarea name="phone" placeholder="Phone Number"></textarea>
+					<div class="sec6_5_label">Your Message</div>
+					<input type="textarea" name="message" placeholder="Type your message here" />
+
+					<button>Send a Message</button>
+					<div class="clr"></div>
+				</form>
+			</div>
+		</section>
 		<section class="sec8_12">
 			<div class="container">
 				<div class="flex">
+					<div class="sec8_12_block" style="background-image:url(i/sec1_11_img1.jpg);">
+						<div class="inner">
+							<div class="pretitle">What We Do</div>
+							<a href="what_we_do.html" class="title">Learn more about what we offer.</a>
+							<a href="what_we_do.html" class="sec4_5_btn white">Click here</a>
+						</div>
+					</div>
 					<div class="sec8_12_block" style="background-image:url(i/sec8_12_img1.jpg);">
 						<div class="inner">
 							<div class="pretitle">Who We Are</div>
-							<a class="title">Meet the team.</a>
-							<a href="#" class="sec4_5_btn white">Click here</a>
+							<a href="who_we_are.html" class="title">Meet the team.</a>
+							<a href="who_we_are.html" href="#" class="sec4_5_btn white">Click here</a>
 						</div>
 					</div>
-					<div class="sec8_12_block right" style="background-image:url(i/sec8_12_img2.jpg);">
-						<div class="inner">
-							<div class="pretitle">Get in touch</div>
-							<a class="title">Want to learn more?</a>
-							<a href="#" class="sec4_5_btn white">Get In Touch</a>
-						</div>
-					</div>
+
 				</div>
 			</div>
 		</section>
