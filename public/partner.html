@@ -58,33 +58,12 @@
 		<section class="sec7_20">
 			<div class="container">
 				<h2>Want To <i>Parner</i>, Partner?</h2>
-				<div class="sec1_13_text">You can also call us at 844-420-PATH.</div>
+				<div class="sec1_13_text">Drop us a line at 844-420-PATH, or fill out the form below</div>
 
-
-				<form
-		    name="partner" method="post" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit">
-		      <input type="hidden" name="form-name" value="website" />
-		      <ul>
-		        <li v-for="(soundBite, index) in soundClips" :key="index">
-		          <label>
-		            <input
-		              type="radio"
-		              name="clip"
-		              :value="soundBite"
-		              :checked="soundBite === form.chosenClip"
-		              @input="ev => form.chosenClip = ev.target.value"
-		            >
-		            <span>{{ soundBite }}</span>
-		          </label>
-		        </li>
-		      </ul>
-		      <button type="submit">Just tell me already</button>
-		    </form>
-
-				<form action="" method="POST" class="sec6_5_form">
+				<form method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit" class="sec6_5_form">
 
 					<div class="sec6_5_label">Your Message</div>
-					<textarea name="message" placeholder="Tell us about your project, or just drop a note"></textarea>
+					<textarea name="message" placeholder="Tell us about your partnership idea"></textarea>
 
 					<div class="sec6_5_label">Your name</div>
 					<input type="text" name="name" placeholder="" />
