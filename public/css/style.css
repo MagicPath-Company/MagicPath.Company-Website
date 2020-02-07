@@ -2742,10 +2742,6 @@ Landing 4 - Desktop App
 /* Navigation 5 */
 
 .nav5{
-	position:absolute;
-	top:60px;
-	left:0;
-	z-index:20;
   max-width: 100px;
 }
 
