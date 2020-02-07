@@ -52,44 +52,26 @@
 
 		<section class="sec1_20">
 			<div class="container">
-				<h2>What <i>We</i> Do</h2>
-				<div class="flex">
-					<div class="col">
-						<i>ARCHITECTURE</i>
-						<i>CONSTRUCTION</i>
-						<i>AGRICULTURE</i>
-						<i>BUSINESS SERVICES</i>
-						<i>TRAINING &amp; EDUCATION</i>
-						<i>ENVIRONMENTAL</i>
-						<i>GOVERNMENT &amp; LOBBYING</i>
-						<div class="clr"></div>
-					</div>
-					<div class="col bordered">
-						<i>LEGAL</i>
-						<i>MANUFACTURING</i>
-						<i>ENGINEERING</i>
-						<i>MEDIA/PR</i>
-						<i>MARKETING</i>
-						<i>PHARMA</i>
-						<i>PUBLISHING</i>
-						<i>REAL ESTATE</i>
-						<i>RETAIL</i>
-						<div class="clr"></div>
-					</div>
-					<div class="col">
-						<i>ENERGY</i>
-						<i>ENVIRONMENT</i>
-						<i>LOBBYING</i>
-						<i>FINANCIAL/TAX</i>
-						<i>HUMAN ELEMENTS</i>
-						<i>INSURANCE</i>
-						<i>DISTRIBUTION</i>
-						<i>LICENSING</i>
-						<i>LAB TESTING</i>
-
-						<div class="clr"></div>
-					</div>
-				</div>
+				<form name="contact" method="POST" data-netlify="true">
+				  <p>
+				    <label>Your Name: <input type="text" name="name" /></label>
+				  </p>
+				  <p>
+				    <label>Your Email: <input type="email" name="email" /></label>
+				  </p>
+				  <p>
+				    <label>Your Role: <select name="role[]" multiple>
+				      <option value="leader">Leader</option>
+				      <option value="follower">Follower</option>
+				    </select></label>
+				  </p>
+				  <p>
+				    <label>Message: <textarea name="message"></textarea></label>
+				  </p>
+				  <p>
+				    <button type="submit">Send</button>
+				  </p>
+				</form>
 			</div>
 		</section>
 -->
