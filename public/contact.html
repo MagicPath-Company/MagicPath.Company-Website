@@ -85,12 +85,33 @@
 				<h2>Drop Us <i>a</i> Line</h2>
 				<div class="sec1_13_text">We Are Always Looking for the Next Great Project</div>
 
-				<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit" class="sec6_5_form">
+				<form name="contact" method="POST" data-netlify="true">
+				  <p>
+				    <label>Your Name: <input type="text" name="name" /></label>
+				  </p>
+				  <p>
+				    <label>Your Email: <input type="email" name="email" /></label>
+				  </p>
+				  <p>
+				    <label>Your Role: <select name="role[]" multiple>
+				      <option value="leader">Leader</option>
+				      <option value="follower">Follower</option>
+				    </select></label>
+				  </p>
+				  <p>
+				    <label>Message: <textarea name="message"></textarea></label>
+				  </p>
+				  <p>
+				    <button type="submit">Send</button>
+				  </p>
+				</form>
+
+				<form name="contact" method="POST" data-netlify="true" class="sec6_5_form">
 
 					<div class="sec6_5_label">Your Message</div>
-					<textarea name="name" placeholder="Your Name"></textarea>
-					<textarea name="email" placeholder="Your Email"></textarea>
-					<textarea name="phone" placeholder="Phone Number"></textarea>
+					<input type="text" name="name" placeholder="Your Name"></textarea>
+					<input type="text" name="email" placeholder="Your Email"></textarea>
+					<input type="text" name="phone" placeholder="Phone Number"></textarea>
 					<div class="sec6_5_label">Your Message</div>
 					<input type="textarea" name="message" placeholder="Type your message here" />
 
