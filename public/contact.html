@@ -85,7 +85,7 @@
 				<h2>Drop Us <i>a</i> Line</h2>
 				<div class="sec1_13_text">We Are Always Looking for the Next Great Project</div>
 
-				<form name="contact" method="POST" data-netlify="true">
+				<form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" @submit.prevent="handleSubmit" class="sec6_5_form">
 
 					<div class="sec6_5_label">Your Message</div>
 					<textarea name="name" placeholder="Your Name"></textarea>
