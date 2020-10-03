@@ -6114,6 +6114,11 @@ button:focus {
   transition: all .15s ease-in-out;
 }
 
+.min-height-px-72 {
+  min-height: 72px;
+}
+
+
 .min-height-px-64 {
   min-height: 64px;
 }
